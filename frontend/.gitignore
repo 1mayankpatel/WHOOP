@@ -1,0 +1,247 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+pythonenv*
+
+# FastAPI / Uvicorn
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+celerybeat-schedule
+celerybeat.pid
+
+# Database
+*.db
+*.sqlite3
+*.sqlite
+*.sql
+pgdata/
+postgres_data/
+redis_data/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+
+# React / Vite / Build outputs
+dist/
+dist-ssr/
+build/
+out/
+*.local
+.vite/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+
+# IDE & Editors
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.idea/*
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# AI/ML Models & Training
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.tflite
+models/
+checkpoints/
+saved_models/
+wandb/
+mlruns/
+runs/
+lightning_logs/
+*.tfrecord
+
+# Hugging Face cache
+.cache/
+huggingface/
+transformers_cache/
+
+# LoRA adapters (keep structure but not large files)
+ai-models/lora/adapters/*.bin
+ai-models/lora/adapters/*.safetensors
+
+# Datasets (large files)
+*.csv
+*.parquet
+*.arrow
+*.feather
+datasets/large/
+data/raw/
+*.jsonl
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+**/.ipynb_checkpoints/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+*.log
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+combined.log
+error.log
+access.log
+
+# Testing
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+*.cover
+.coverage.*
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Alembic (keep versions folder structure but not specific migrations if private)
+# Uncomment the line below if you don't want to share migrations
+# backend/alembic/versions/*.py
+
+# Redis dump
+dump.rdb
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+poetry.lock
+
+# TypeScript
+*.tsbuildinfo
+
+# Build artifacts
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Secrets & Certificates
+*.pem
+*.key
+*.cert
+*.crt
+secrets/
+credentials/
+
+# Large media files (if any)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+
+# Backup files
+*.backup
+*.old
+*.orig

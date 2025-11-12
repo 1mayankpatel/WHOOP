@@ -11,7 +11,6 @@ class Settings(BaseSettings):
     
     Required fields: SECRET_KEY, DATABASE_URL, REDIS_URL
     Optional fields: OPENAI_API_KEY, HUGGINGFACE_TOKEN, CELERY_BROKER_URL, CELERY_RESULT_BACKEND
-
     """
 
     APP_NAME: str = "WHOOP Clone"
@@ -33,13 +32,6 @@ class Settings(BaseSettings):
     
     CELERY_BROKER_URL: str = ""
     CELERY_RESULT_BACKEND: str = ""
-    
-   
-    @classmethod
-    def validate_secret_key(cls, v):
-        if len(v) < 32:
-            raise ValueError('SECRET_KEY must be at least 32 characters')
-        return v
     
     class Config:
         env_file = ".env"

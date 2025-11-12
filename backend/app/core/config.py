@@ -32,6 +32,13 @@ class Settings(BaseSettings):
     
     CELERY_BROKER_URL: str = ""
     CELERY_RESULT_BACKEND: str = ""
+
+    @field_validator('SECRET_KEY')
+    @classmethod
+    def validate_secret_key(cls, v):
+        if len(v) < 32:
+            raise ValueError('SECRET_KEY must be at least 32 characters')
+        return v
     
     class Config:
         env_file = ".env"

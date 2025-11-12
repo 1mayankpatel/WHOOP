@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str
     REDIS_URL: str
     
-    CORS_ORIGINS: List[str] = ["http://localhost:5173", "http://localhost:3000"]
+    CORS_ORIGINS: List[str] = [ ]
     
     OPENAI_API_KEY: str = ""
     HUGGINGFACE_TOKEN: str = ""

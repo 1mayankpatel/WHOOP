@@ -22,10 +22,10 @@ class Settings(BaseSettings):
     DATABASE_URL: str
     REDIS_URL: str
     
-    CORS_ORIGINS: List[str] = [ ]
+    CORS_ORIGINS: List[str] = []
     
-    OPENAI_API_KEY: str = ""
-    HUGGINGFACE_TOKEN: str = ""
+    OPENAI_API_KEY: Optional[str] = None
+    HUGGINGFACE_TOKEN: Optional[str] = None
     MODEL_NAME: str = "meta-llama/Llama-2-7b-chat-hf"
     
     CELERY_BROKER_URL: str = ""

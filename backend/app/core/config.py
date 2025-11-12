@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     
     Required fields: SECRET_KEY, DATABASE_URL, REDIS_URL
     Optional fields: OPENAI_API_KEY, HUGGINGFACE_TOKEN, CELERY_BROKER_URL, CELERY_RESULT_BACKEND
+    
     """
 
     APP_NAME: str = "WHOOP Clone"

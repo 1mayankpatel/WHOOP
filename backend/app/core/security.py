@@ -73,10 +73,11 @@ def decode_access_token(token: str) -> Optional[dict]:
     Returns:
         dict | None: Decoded token payload if valid, otherwise None.
 
-    Raises:
-        JWTError: Raised internally when the token is invalid, expired,
-        or cannot be decoded. This function safely handles the exception
-        and returns None instead.
+
+    Notes:
+        All JWTError exceptions are handled internally. Invalid or expired
+        tokens return None instead of raising an exception.
+
     """
 
     try:
